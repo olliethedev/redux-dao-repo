@@ -96,8 +96,9 @@ export default class UserRepoModel extends RepoDataModel {
 }
 ```
 ### Declare
-```js
+
 Create an instance of our custom DAO `UserRepoModel`. Because this will not change we can add it to `constants.js` file for convinience.
+```js
 export const MODELS = Object.freeze({
   USER: new UserRepoModel("user", "UPDATE_USER", new DataModel()),
 });
