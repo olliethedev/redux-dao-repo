@@ -20,5 +20,7 @@ export default class RepoDataModel {
             return dispatch(this.createAction(newModel));
         }
         return [model, updateModel, dispatch];
+
+        return [{}, {}, {}]
     }
 }

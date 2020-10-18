@@ -1,10 +1,10 @@
 {
   "name": "redux-dao-repo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility library simplifying Redux",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand --watch --env=jsdom"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,25 @@
   "peerDependencies": {
     "react-redux": "^7.2.1",
     "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/plugin-transform-react-jsx": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "jest": "^26.5.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-mock-store": "^1.5.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
