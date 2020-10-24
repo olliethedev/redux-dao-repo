@@ -1,10 +1,12 @@
 {
   "name": "redux-dao-repo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utility library simplifying Redux",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --runInBand --watch --env=jsdom"
+    "test": "jest --runInBand --watch --env=jsdom",
+    "lint": "eslint src",
+    "test-ci": "jest --runInBand --env=jsdom"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,9 @@
   "homepage": "https://github.com/Code-Principles/redux-dao-repo#readme",
   "peerDependencies": {
     "react-redux": "^7.2.1",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -31,10 +35,6 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
     "jest": "^26.5.3",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-redux": "^7.2.1",
-    "redux": "^4.0.5",
     "redux-mock-store": "^1.5.4"
   },
   "jest": {
