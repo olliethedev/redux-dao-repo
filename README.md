@@ -1,6 +1,6 @@
 # Redux DAO Repo
 
-This library implements Repository and Data-Assess-Object patterns to provide strict access to the Redux store.
+This library implements Repository and Data-Access-Object patterns to provide strict access to the Redux store.
 
 ## Installation and Setup
 
